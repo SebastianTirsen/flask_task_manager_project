@@ -1,7 +1,7 @@
 import os
 from flask import (
     Flask, flash, render_template,
-    redirect, request,session, url_for)
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -25,6 +25,6 @@ def get_tasks():
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"), 
+    app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
