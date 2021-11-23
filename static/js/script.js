@@ -1,14 +1,18 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav({edge: "right"});
-    $('.collapsible').collapsible();
-    $('.tooltipped').tooltip();
-    $('select').formSelect();
-    $('.datepicker').datepicker({
+/*
+    jQuery for MaterializeCSS initialization
+*/
+
+$(document).ready(function () {
+  $(".sidenav").sidenav({edge: "right"});
+  $(".collapsible").collapsible();
+  $(".tooltipped").tooltip();
+  $("select").formSelect();
+  $(".datepicker").datepicker({
       format: "dd mmmm, yyyy",
       yearRange: 3,
-      ShowClearBtn: true;
+      showClearBtn: true,
       i18n: {
-        done: "Select"
+          done: "Select"
       }
-    });
   });
+});
